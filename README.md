@@ -53,7 +53,7 @@ More features and improvements will be added over time.
 
 📥 How to Install?
 
-bash install.sh
+curl -fsSL https://raw.githubusercontent.com/HeronPanel/HeronPanel/main/Install.sh | sudo bash
 
 ⸻
 
