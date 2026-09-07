@@ -1,16 +1,64 @@
-## Hi there 👋
+🦅 HeronPanel
 
-<!--
-**HeronPanel/HeronPanel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+HeronPanel is a modern, powerful and easy-to-use game server management panel designed to manage your servers from one place.
 
-Here are some ideas to get you started:
+✨ Features
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* 🖥️ Modern & clean dashboard
+* 🎮 Server Console
+* 📁 File Manager
+* 🗄️ Database Manager
+* ⏰ Server Schedules
+* 👥 User & Permission Management
+* 💾 Backups
+* 🌐 Network & Port Management
+* ⚙️ Startup Configuration
+* 🔌 Plugin Manager
+* 🎯 Player Manager
+* 📊 CPU, RAM, Disk & Network Monitoring
+* 🔐 Secure Authentication
+* 💬 Discord Login
+* 📱 Responsive Design
+* 🛡️ Admin Management
+
+🎨 Theme
+
+WINTER ❄️
+
+🚀 Benefits
+
+* Easy server management
+* Clean and beginner-friendly interface
+* Real-time resource monitoring
+* Centralized server controls
+* Lightweight and responsive
+* Designed for both administrators and users
+* Extensible architecture for future features
+
+🧩 Built For
+
+HeronPanel can be used for:
+
+* Minecraft Servers
+* Game Server Hosting
+* Private Server Infrastructure
+* Hosting Providers
+* Personal VPS/Game Server Management
+
+📌 Project Status
+
+🚧 HeronPanel is currently under active development.
+
+More features and improvements will be added over time.
+
+📥 How to Install?
+
+Installation instructions will be added once the first stable release is available.
+
+📄 License
+
+License information will be added with the official release.
+
+⸻
+
+🦅 HeronPanel — Manage your servers. Your way.
