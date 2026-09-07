@@ -55,10 +55,6 @@ More features and improvements will be added over time.
 
 bash install.sh
 
-📄 License
-
-License information will be added with the official release.
-
 ⸻
 
 🦅 HeronPanel — Manage your servers. Your way.
