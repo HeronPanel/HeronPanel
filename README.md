@@ -53,7 +53,7 @@ More features and improvements will be added over time.
 
 📥 How to Install?
 
-Installation instructions will be added once the first stable release is available.
+bash install.sh
 
 📄 License
 
