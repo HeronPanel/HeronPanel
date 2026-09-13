@@ -1,60 +1,86 @@
-🦅 HeronPanel
+﻿# 🚀 HeronPanel
 
-HeronPanel is a modern, powerful and easy-to-use game server management panel designed to manage your servers from one place.
+HeronPanel is a professional management panel designed for server orchestration and monitoring, featuring a high-performance Go-based daemon and a modern Next.js frontend.
 
-✨ Features
+## 🛠 Technology Stack
 
-* 🖥️ Modern & clean dashboard
-* 🎮 Server Console
-* 📁 File Manager
-* 🗄️ Database Manager
-* ⏰ Server Schedules
-* 👥 User & Permission Management
-* 💾 Backups
-* 🌐 Network & Port Management
-* ⚙️ Startup Configuration
-* 🔌 Plugin Manager
-* 🎯 Player Manager
-* 📊 CPU, RAM, Disk & Network Monitoring
-* 🔐 Secure Authentication
-* 💬 Discord Login
-* 📱 Responsive Design
-* 🛡️ Admin Management
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, Prisma ORM
+- **Database**: PostgreSQL
+- **Daemon**: Go (Golang)
+- **Infrastructure**: Docker, Systemd
 
-🎨 Theme
+## 📋 Prerequisites
 
-WINTER ❄️
+To install HeronPanel, your system should meet the following requirements:
+- **OS**: Ubuntu 22.04+ or Debian 11+
+- **Hardware**: Minimum 2GB RAM (recommended 4GB+)
+- **Privileges**: Root or sudo access
 
-🚀 Benefits
+## 🚀 Installation
 
-* Easy server management
-* Clean and beginner-friendly interface
-* Real-time resource monitoring
-* Centralized server controls
-* Lightweight and responsive
-* Designed for both administrators and users
-* Extensible architecture for future features
+The easiest way to install HeronPanel is by using the provided installation script.
 
-🧩 Built For
+### 1. Clone the Repository
+\\\ash
+git clone <your-repository-url>
+cd HeronPanel
+\\\
 
-HeronPanel can be used for:
+### 2. Run the Installer
+\\\ash
+chmod +x install.sh
+sudo ./install.sh
+\\\
 
-* Minecraft Servers
-* Game Server Hosting
-* Private Server Infrastructure
-* Hosting Providers
-* Personal VPS/Game Server Management
+The script will automatically:
+- Update system packages.
+- Install Node.js, Go, PostgreSQL, and Docker.
+- Configure the backend and compile the daemon.
+- Setup systemd services for the API and Daemon.
 
-📌 Project Status
+## ⚙️ Configuration
 
-🚧 HeronPanel is currently under active development.
+Before starting the services, configure your environment variables:
 
-More features and improvements will be added over time.
+1. Copy the example env file:
+   \\\ash
+   cp .env.example .env
+   \\\
+2. Edit the .env file:
+   \\\ash
+   nano .env
+   \\\
 
-📥 How to Install?
+**Key Variables:**
+- DATABASE_URL: Your PostgreSQL connection string.
+- JWT_SECRET: A strong secret key for authentication.
+- DAEMON_API_KEY: The key used for communication between the API and the Daemon.
 
-curl -fsSL https://raw.githubusercontent.com/HeronPanel/HeronPanel/main/Install.sh | sudo bash
+## 🛠 Service Management
 
-⸻
+HeronPanel runs as systemd services for maximum reliability.
 
-🦅 HeronPanel — Manage your servers. Your way.
+### API Service
+- **Start**: \sudo systemctl start heron-api\
+- **Stop**: \sudo systemctl stop heron-api\
+- **Restart**: \sudo systemctl restart heron-api\
+- **Status**: \sudo systemctl status heron-api\
+
+### Daemon Service
+- **Start**: \sudo systemctl start heron-daemon\
+- **Stop**: \sudo systemctl stop heron-daemon\
+- **Restart**: \sudo systemctl restart heron-daemon\
+- **Status**: \sudo systemctl status heron-daemon\
+
+## 📂 Project Structure
+
+- \/backend\: Node.js API and database logic.
+- \/frontend\: Next.js user interface.
+- \/daemon\: Go-based agent for server-side execution.
+- \/config\: System configuration files.
+- \/docker\: Dockerfiles and orchestration scripts.
+- \/scripts\: Utility scripts for installation and maintenance.
+
+## 🛡️ License
+Refer to the LICENSE file for details.
