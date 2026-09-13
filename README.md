@@ -22,16 +22,10 @@ To install HeronPanel, your system should meet the following requirements:
 The easiest way to install HeronPanel is by using the provided installation script.
 
 ### 1. Clone the Repository
-\\\ash
-git clone <your-repository-url>
-cd HeronPanel
-\\\
+``git clone HeronPanel/HeronPanel.git && cd HeronPanel && unzip HeronPanel.zip && cd HeronPanel``
 
 ### 2. Run the Installer
-\\\ash
-chmod +x install.sh
-sudo ./install.sh
-\\\
+``bash install.sh``
 
 The script will automatically:
 - Update system packages.
@@ -44,13 +38,10 @@ The script will automatically:
 Before starting the services, configure your environment variables:
 
 1. Copy the example env file:
-   \\\ash
-   cp .env.example .env
-   \\\
-2. Edit the .env file:
-   \\\ash
-   nano .env
-   \\\
+   ``cp .env.example .env``
+  
+3. Edit the .env file:
+   ``nano .en``
 
 **Key Variables:**
 - DATABASE_URL: Your PostgreSQL connection string.
