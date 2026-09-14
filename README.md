@@ -41,7 +41,7 @@ Before starting the services, configure your environment variables:
    ``cp .env.example .env``
   
 3. Edit the .env file:
-   ``nano .en``
+   ``nano .env``
 
 **Key Variables:**
 - DATABASE_URL: Your PostgreSQL connection string.
