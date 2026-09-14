@@ -72,6 +72,3 @@ HeronPanel runs as systemd services for maximum reliability.
 - \/config\: System configuration files.
 - \/docker\: Dockerfiles and orchestration scripts.
 - \/scripts\: Utility scripts for installation and maintenance.
-
-## 🛡️ License
-Refer to the LICENSE file for details.
